@@ -1,0 +1,99 @@
+body {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://www.shutterstock.com/image-photo/minimalistic-abstract-gentle-light-blue-250nw-2271654373.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: auto;
+  width: 100%;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgba(232, 241, 224, 0.763);
+  margin-bottom: 8px;
+  padding: 8px;
+}
+
+.list__item_done {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.list__item:last-child {
+  margin-bottom: 0;
+}
+
+.list__item-checkbox {
+  margin-right: 8px;
+}
+
+.btn {
+  height: 40px;
+  min-width: 64px;
+  border: 3px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-left: 16px;
+}
+
+.deleteBtn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  margin-left: auto;
+  padding: 0;
+  transform: rotate(45deg);
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.deleteBtn::before {
+  content: "+";
+}
+
+.actions {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.task-input {
+  height: 32px;
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+}
